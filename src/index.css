@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TensorVale — copper / slate enterprise palette */
+
+@font-face {
+  font-family: 'Winked';
+  src: url('/fonts/winked.otf') format('opentype');
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  body {
+    background-color: #10232a;
+    color: #d3c3b9;
+    @apply font-sans antialiased;
+    overflow-x: hidden;
+  }
+  ::selection {
+    background-color: rgba(181, 136, 99, 0.4);
+    color: #181816;
+  }
+  :focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px #10232a, 0 0 0 4px rgba(181, 136, 99, 0.55);
+  }
+}
+
+@layer components {
+  .container-tv {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-pad {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .heading-xl {
+    @apply font-display text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-[3.5rem] leading-[1.05];
+  }
+
+  .heading-lg {
+    @apply font-display text-3xl font-bold tracking-tight sm:text-4xl lg:text-[2.75rem] leading-[1.12];
+  }
+
+  .body-muted {
+    @apply text-base sm:text-lg leading-relaxed;
+    color: #a79e9c;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold transition duration-200 ease-out active:scale-[0.98];
+    background-color: #b58863;
+    color: #181816;
+  }
+  .btn-primary:hover {
+    background-color: #c9a07a;
+    box-shadow: 0 0 40px rgba(181, 136, 99, 0.35);
+  }
+
+  .btn-dark {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border px-6 py-3.5 text-sm font-semibold transition duration-200 ease-out active:scale-[0.98];
+    border-color: rgba(181, 136, 99, 0.4);
+    background-color: rgba(24, 24, 22, 0.7);
+    color: #d3c3b9;
+  }
+  .btn-dark:hover {
+    border-color: #b58863;
+    background-color: rgba(181, 136, 99, 0.12);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border bg-transparent px-6 py-3.5 text-sm font-semibold transition duration-200 ease-out;
+    border-color: rgba(211, 195, 185, 0.28);
+    color: #d3c3b9;
+  }
+  .btn-outline:hover {
+    border-color: #b58863;
+    background-color: rgba(181, 136, 99, 0.1);
+    color: #d3c3b9;
+  }
+
+  .btn-outline-light {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border bg-transparent px-6 py-3.5 text-sm font-semibold transition duration-200 ease-out;
+    border-color: rgba(181, 136, 99, 0.45);
+    color: #d3c3b9;
+  }
+  .btn-outline-light:hover {
+    border-color: #b58863;
+    background-color: rgba(181, 136, 99, 0.12);
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em];
+    color: #b58863;
+  }
+
+  .bento-dark {
+    border-radius: 1.75rem;
+    background-color: #162a32;
+    border: 1px solid #3d4d55;
+    color: #d3c3b9;
+  }
+  @media (min-width: 640px) {
+    .bento-dark {
+      border-radius: 2rem;
+    }
+  }
+
+  .bento-panel {
+    border-radius: 1.75rem;
+    border: 1px solid #3d4d55;
+    background-color: #162a32;
+  }
+  @media (min-width: 640px) {
+    .bento-panel {
+      border-radius: 2rem;
+    }
+  }
+
+  .metric-mono {
+    @apply font-mono tabular-nums tracking-tight;
+  }
+
+  .grid-dots-dark {
+    background-image: linear-gradient(rgba(211, 195, 185, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(211, 195, 185, 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .section-dark {
+    background-color: #10232a;
+    color: #d3c3b9;
+  }
+
+  .tv-lift {
+    @apply transition duration-300 ease-out;
+  }
+  .tv-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 50px rgba(16, 35, 42, 0.5);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tv-lift:hover {
+      transform: none;
+    }
+    .animate-float,
+    .animate-float-slow,
+    .animate-marquee,
+    .animate-pulse-glow {
+      animation: none !important;
+    }
+  }
+}
