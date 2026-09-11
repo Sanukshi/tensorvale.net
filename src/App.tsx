@@ -8,6 +8,7 @@ import Contact from './pages/Contact'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Terms from './pages/Terms'
 import TensorEval from './pages/TensorEval'
+import ValeMetric from './pages/ValeMetric'
 
 function ScrollToHash() {
   const { pathname, hash } = useLocation()
@@ -31,8 +32,9 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/tensoreval" element={<TensorEval />} />
-          <Route path="/product" element={<TensorEval />} />
+          <Route path="/product" element={<ValeMetric />} />
+          <Route path="/valemetric" element={<ValeMetric />} />
+          <Route path="/tensoreval" element={<ValeMetric />} />
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/docs" element={<DocumentationPage />} />
           <Route path="/documentation" element={<DocumentationPage />} />

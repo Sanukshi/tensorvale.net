@@ -3,7 +3,7 @@ import TrustMarquee from '../components/landing/TrustMarquee'
 import ProblemSolutionSection from '../components/landing/ProblemSolutionSection'
 import CapabilitiesSection from '../components/landing/CapabilitiesSection'
 import ProcessSection from '../components/landing/ProcessSection'
-import TechnicalShowcaseSection from '../components/landing/TechnicalShowcaseSection'
+// import TechnicalShowcaseSection from '../components/landing/TechnicalShowcaseSection'
 import TestimonialsSection from '../components/landing/TestimonialsSection'
 import MonetizationSection from '../components/landing/MonetizationSection'
 import FAQSection from '../components/landing/FAQSection'
@@ -18,7 +18,7 @@ export default function Home() {
       <ProblemSolutionSection />
       <CapabilitiesSection />
       <ProcessSection />
-      <TechnicalShowcaseSection />
+      {/* <TechnicalShowcaseSection /> */}
       <TestimonialsSection />
       <MonetizationSection />
       <FAQSection />
