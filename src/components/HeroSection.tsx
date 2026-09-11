@@ -59,8 +59,8 @@ export default function HeroSection() {
                   datasets, workloads, configurations, and deployment environments.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-3">
-                  <Link to="/#platform" className="btn-primary">
-                    Explore Platform <ArrowRight className="h-4 w-4" />
+                  <Link to="/product" className="btn-primary">
+                    Explore ValeMetric <ArrowRight className="h-4 w-4" />
                   </Link>
                   <Link to="/documentation" className="btn-secondary">
                     View Documentation

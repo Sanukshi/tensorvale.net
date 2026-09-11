@@ -182,10 +182,10 @@ export default function Navbar() {
 
           <div className="relative z-10 flex items-center gap-2 sm:gap-3">
             <Link
-              to="/tensoreval"
+              to="/product"
               className="hidden items-center gap-2 rounded-full bg-tv-cyan px-5 py-2.5 text-sm font-semibold text-tv-panel transition hover:bg-[#c9a07a] sm:inline-flex"
             >
-              TensorEval <ArrowRight className="h-4 w-4" />
+              Get Started <ArrowRight className="h-4 w-4" />
             </Link>
             <button
               type="button"
@@ -239,8 +239,8 @@ export default function Navbar() {
                     </Link>
                   )
                 })}
-                <Link to="/tensoreval" className="btn-primary mt-2 w-full">
-                  TensorEval <ArrowRight className="h-4 w-4" />
+                <Link to="/product" className="btn-primary mt-2 w-full">
+                  Get Started <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
             </motion.div>

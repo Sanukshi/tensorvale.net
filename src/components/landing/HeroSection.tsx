@@ -105,8 +105,8 @@ export default function HeroSection() {
             transition={{ duration: 0.4, delay: 0.18, ease: easeOut }}
             className="mt-8 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap"
           >
-            <Link to="/#contact" className="btn-primary w-full justify-center sm:w-auto">
-              Request Access <ArrowRight className="h-4 w-4" />
+            <Link to="/product" className="btn-primary w-full justify-center sm:w-auto">
+              Explore ValeMetric <ArrowRight className="h-4 w-4" />
             </Link>
             <Link to="/#architecture" className="btn-outline-light w-full justify-center sm:w-auto">
               View Architecture
